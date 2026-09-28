@@ -5,6 +5,10 @@
     {
       "id": "atom-starter",
       "url": "recipes/atom-starter.json"
+    },
+    {
+      "id": "horton-commander",
+      "url": "recipes/horton-commander.json"
     }
   ]
 }
