@@ -13,3 +13,9 @@ count is 17,641 and its SHA-256 is
 
 `assets/EXAMPLE.ASM` is the CP/M sample authored for this recipe and is
 distributed under the repository's GPL-3.0-or-later terms.
+
+`assets/HC.COM` is the Horton Commander preview, 18,213 bytes, SHA-256
+`53e1805d7160ec6e36884170ad12bfeed7ebec8f61fab10ab25155cdf6678cc7`. The
+combined program and its corresponding source are distributed under
+GPL-3.0-or-later. The Horton source link in `registry.json` points to the
+revision used to build this binary.

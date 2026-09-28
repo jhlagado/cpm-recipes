@@ -8,7 +8,8 @@
     },
     {
       "id": "horton-commander",
-      "url": "recipes/horton-commander.json"
+      "url": "recipes/horton-commander.json",
+      "sourceUrl": "https://github.com/jhlagado/horton-commander/tree/7acceb68f71a3c7c22641b73e8874236bbc1c825"
     }
   ]
 }

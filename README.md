@@ -15,8 +15,9 @@ recipe; the copy is not modified.
 The Horton Commander preview recipe targets Triptych's four-drive profile. It
 places `HC.COM` on A and gives the program writable B, C and D work disks. The
 current HC build statically includes Edit's GPL-3.0-or-later editing core; the
-combined executable remains unpublished until its distribution terms and
-corresponding-source package are resolved.
+combined executable and corresponding source are distributed under
+GPL-3.0-or-later. The recipe card links to the exact source revision and its
+license.
 
 The site deliberately has no account, server or database. It is published as
 static GitHub Pages content. Future work can add provider URLs, Nucleus and
