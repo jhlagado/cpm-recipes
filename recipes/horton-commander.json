@@ -1,0 +1,24 @@
+{
+  "schema": "triptych-file-recipe-v1",
+  "id": "horton-commander",
+  "revision": "preview-17",
+  "name": "Horton Commander",
+  "instruction": "At A>, type HC to start. HC.COM is on A; B, C and D are writable work disks.",
+  "profile": "triptych-cpu-v0.1-2m-n04",
+  "workDrives": ["B", "C", "D"],
+  "components": [
+    {
+      "id": "hc",
+      "name": "HC.COM",
+      "description": "Horton Commander preview with file management, text and hex viewing, and quick editing.",
+      "files": [
+        {
+          "name": "HC.COM",
+          "url": "../assets/HC.COM",
+          "bytes": 18213,
+          "sha256": "53e1805d7160ec6e36884170ad12bfeed7ebec8f61fab10ab25155cdf6678cc7"
+        }
+      ]
+    }
+  ]
+}

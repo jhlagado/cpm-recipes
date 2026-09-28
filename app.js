@@ -20,7 +20,7 @@ function selectedComponents(card) {
   );
 }
 
-function renderRecipe(recipe, recipeUrl) {
+function renderRecipe(recipe, recipeUrl, sourceUrl) {
   const card = document.createElement("article");
   card.className = "recipe";
 
@@ -63,6 +63,15 @@ function renderRecipe(recipe, recipeUrl) {
   download.className = "button secondary";
   download.textContent = "Download locked recipe";
   download.download = `${recipe.id}.json`;
+  if (sourceUrl) {
+    const source = document.createElement("a");
+    source.className = "button secondary";
+    source.href = sourceUrl;
+    source.target = "_blank";
+    source.rel = "noopener";
+    source.textContent = "Source and license";
+    actions.append(source);
+  }
   const linkOutput = document.createElement("p");
   linkOutput.className = "link-output";
   linkOutput.setAttribute("aria-live", "polite");
@@ -128,7 +137,14 @@ async function start() {
   for (const entry of registry.recipes) {
     const recipeUrl = new URL(entry.url, registryUrl).href;
     const recipe = await loadJson(recipeUrl);
-    recipes.append(renderRecipe(recipe, recipeUrl));
+    let sourceUrl;
+    if (entry.sourceUrl) {
+      const parsedSourceUrl = new URL(entry.sourceUrl);
+      if (parsedSourceUrl.protocol !== "https:")
+        throw new Error(`The ${entry.id} source link must use HTTPS.`);
+      sourceUrl = parsedSourceUrl.href;
+    }
+    recipes.append(renderRecipe(recipe, recipeUrl, sourceUrl));
   }
   status.className = "status";
   status.textContent = "Choose the files to place on the new A drive.";
