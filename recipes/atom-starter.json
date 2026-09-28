@@ -1,0 +1,49 @@
+{
+  "schema": "triptych-file-recipe-v1",
+  "id": "atom-starter",
+  "revision": "1",
+  "name": "Atom starter",
+  "instruction": "At A>, type DIR to see the installed files. Assemble the example with ATOM EXAMPLE.ASM EXAMPLE.COM.",
+  "profile": "triptych-cpu-v0.1-2m-n04",
+  "components": [
+    {
+      "id": "atom",
+      "name": "ATOM.COM",
+      "description": "The Atom 0.3.2 CP/M assembler.",
+      "files": [
+        {
+          "name": "ATOM.COM",
+          "url": "https://jhlagado.github.io/atom/releases/0.3.2/ATOM.COM",
+          "bytes": 17641,
+          "sha256": "e2c4a71aca52659ce8ebac87fba9aedd40384ccb858d7d4642cba89137c163ca"
+        }
+      ]
+    },
+    {
+      "id": "edit",
+      "name": "EDIT.COM",
+      "description": "Edit 0.1.1, copied from the published release for this first recipe.",
+      "files": [
+        {
+          "name": "EDIT.COM",
+          "url": "../assets/EDIT.COM",
+          "bytes": 3107,
+          "sha256": "73265438a4f2df9a3f507f1bdcd49c48ebabe46cbcdb96e58dc0ee39f8b6a905"
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "name": "EXAMPLE.ASM",
+      "description": "A tiny standalone CP/M source file that prints a greeting.",
+      "files": [
+        {
+          "name": "EXAMPLE.ASM",
+          "url": "../assets/EXAMPLE.ASM",
+          "bytes": 236,
+          "sha256": "ec0736b7af5fcb2bf4f28b91402cad21a4ebca7945007adf772bf3ab30808f95"
+        }
+      ]
+    }
+  ]
+}

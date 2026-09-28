@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CP/M Recipes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Triptych companion</p>
+        <h1>CP/M Recipes</h1>
+        <p class="lede">
+          Pick the files you want, then open a fresh writable CP/M disk in
+          Triptych. The recipe is a small, shareable description; the browser
+          fetches and verifies the files when you launch it.
+        </p>
+      </header>
+
+      <section id="status" class="status" role="status" aria-live="polite">
+        Loading recipes…
+      </section>
+      <section id="recipes" aria-label="Recipes"></section>
+
+      <section class="future">
+        <h2>Small by design</h2>
+        <p>
+          This first version has one built-in recipe and no account, server or
+          central binary store. Later we can add Nucleus and Skate recipes,
+          drive selection, user-added providers and historical read-only
+          collections without changing the file contract.
+        </p>
+      </section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

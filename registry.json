@@ -1,0 +1,10 @@
+{
+  "schema": "cpm-recipes-registry-v1",
+  "name": "CP/M Recipes",
+  "recipes": [
+    {
+      "id": "atom-starter",
+      "url": "recipes/atom-starter.json"
+    }
+  ]
+}
