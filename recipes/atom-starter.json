@@ -1,47 +1,53 @@
 {
   "schema": "triptych-file-recipe-v1",
   "id": "atom-starter",
-  "revision": "1",
-  "name": "Atom starter",
-  "instruction": "At A>, type DIR to see the installed files. Assemble the example with ATOM EXAMPLE.ASM EXAMPLE.COM.",
+  "revision": "2",
+  "name": "Atom CP/M workshop",
+  "instruction": "All files are on A:. Run ATOMDEMO.COM and press a key at the prompt. Edit ATOMDEMO.ASM with EDIT ATOMDEMO.ASM, then assemble a new copy with ATOM ATOMDEMO.ASM NEWDEMO.COM and run NEWDEMO.COM.",
   "profile": "triptych-cpu-v0.1-2m-n04",
   "components": [
     {
       "id": "atom",
       "name": "ATOM.COM",
-      "description": "The Atom 0.3.2 CP/M assembler.",
+      "description": "Atom 0.3.5, the native CP/M Z80 assembler.",
       "files": [
         {
           "name": "ATOM.COM",
-          "url": "https://jhlagado.github.io/atom/releases/0.3.2/ATOM.COM",
-          "bytes": 17641,
-          "sha256": "e2c4a71aca52659ce8ebac87fba9aedd40384ccb858d7d4642cba89137c163ca"
+          "url": "https://jhlagado.github.io/atom/releases/0.3.5/ATOM.COM",
+          "bytes": 21064,
+          "sha256": "0adfca25c6a8761468e2d49560ebcba519e633e60d6cbb10aa9915312cd4dfd1"
         }
       ]
     },
     {
       "id": "edit",
       "name": "EDIT.COM",
-      "description": "Edit 0.1.1, copied from the published release for this first recipe.",
+      "description": "Edit 0.2.0, the full-screen CP/M text editor.",
       "files": [
         {
           "name": "EDIT.COM",
-          "url": "../assets/EDIT.COM",
-          "bytes": 3107,
-          "sha256": "73265438a4f2df9a3f507f1bdcd49c48ebabe46cbcdb96e58dc0ee39f8b6a905"
+          "url": "../assets/EDIT-0.2.0.COM",
+          "bytes": 5513,
+          "sha256": "6be83f6edb9ee92387c7b3817f473fbbc389a58ab1a20d9a2a6101e695fb77c4"
         }
       ]
     },
     {
-      "id": "example",
-      "name": "EXAMPLE.ASM",
-      "description": "A tiny standalone CP/M source file that prints a greeting.",
+      "id": "demo",
+      "name": "ATOMDEMO.ASM and ATOMDEMO.COM",
+      "description": "A CP/M console demo that prints a heading, counts to five, and waits for a key. Includes editable source and a ready-to-run program.",
       "files": [
         {
-          "name": "EXAMPLE.ASM",
-          "url": "../assets/EXAMPLE.ASM",
-          "bytes": 236,
-          "sha256": "ec0736b7af5fcb2bf4f28b91402cad21a4ebca7945007adf772bf3ab30808f95"
+          "name": "ATOMDEMO.ASM",
+          "url": "../assets/ATOMDEMO.ASM",
+          "bytes": 2361,
+          "sha256": "0b17217fe7fc7c39317ba1184784f71745a258d5476ce922d97dceb27ccb737d"
+        },
+        {
+          "name": "ATOMDEMO.COM",
+          "url": "../assets/ATOMDEMO.COM",
+          "bytes": 130,
+          "sha256": "e5c137959ef96844974798848dd620f765c0dbaeba13986afbab4139c4dbdbfc"
         }
       ]
     }
