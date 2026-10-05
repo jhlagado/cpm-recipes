@@ -4,7 +4,8 @@
   "recipes": [
     {
       "id": "atom-starter",
-      "url": "recipes/atom-starter.json"
+      "url": "recipes/atom-starter.json",
+      "sourceUrl": "https://github.com/jhlagado/atom/tree/v0.3.5"
     },
     {
       "id": "horton-commander",

@@ -1,18 +1,26 @@
 # Distribution notes
 
-`assets/EDIT.COM` is an unmodified copy of the `EDIT.COM` asset from the
-[Edit 0.1.1 release](https://github.com/jhlagado/edit/releases/tag/v0.1.1).
-The source project is GPL-3.0-or-later. The recipe records its byte count
-(3,107) and SHA-256
-`73265438a4f2df9a3f507f1bdcd49c48ebabe46cbcdb96e58dc0ee39f8b6a905`.
+`assets/EDIT.COM` is the unmodified Edit 0.1.1 binary retained for existing
+recipe downloads. The current Atom recipe instead serves `EDIT.COM` from
+`assets/EDIT-0.2.0.COM`, an unmodified copy of the 0.2.0 release artifact.
+Edit is GPL-3.0-or-later. The current copy is 5,513 bytes with SHA-256
+`6be83f6edb9ee92387c7b3817f473fbbc389a58ab1a20d9a2a6101e695fb77c4`; its
+source revision is
+[`dbbda081b58077c98b509625176739bd9c5608ec`](https://github.com/jhlagado/edit/tree/dbbda081b58077c98b509625176739bd9c5608ec).
 
-The recipe refers to the CORS-enabled Atom 0.3.2 Pages artifact at
-`https://jhlagado.github.io/atom/releases/0.3.2/ATOM.COM`. Its recorded byte
-count is 17,641 and its SHA-256 is
-`e2c4a71aca52659ce8ebac87fba9aedd40384ccb858d7d4642cba89137c163ca`.
+The current recipe refers to Atom 0.3.5 at
+`https://jhlagado.github.io/atom/releases/0.3.5/ATOM.COM`. The binary is
+21,064 bytes with SHA-256
+`0adfca25c6a8761468e2d49560ebcba519e633e60d6cbb10aa9915312cd4dfd1`; Atom is
+GPL-3.0-only.
 
-`assets/EXAMPLE.ASM` is the CP/M sample authored for this recipe and is
-distributed under the repository's GPL-3.0-or-later terms.
+`assets/EXAMPLE.ASM` remains available for previously downloaded recipe
+revisions. The current demo source, `assets/ATOMDEMO.ASM`, is distributed under
+this repository's GPL-3.0-or-later terms. It is 2,361 bytes with SHA-256
+`0b17217fe7fc7c39317ba1184784f71745a258d5476ce922d97dceb27ccb737d`.
+`assets/ATOMDEMO.COM` was assembled from that source with Atom 0.3.5; it is
+130 bytes with SHA-256
+`e5c137959ef96844974798848dd620f765c0dbaeba13986afbab4139c4dbdbfc`.
 
 `assets/HC.COM` is the Horton Commander preview, 18,213 bytes, SHA-256
 `53e1805d7160ec6e36884170ad12bfeed7ebec8f61fab10ab25155cdf6678cc7`. The
